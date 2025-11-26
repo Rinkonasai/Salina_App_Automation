@@ -1,4 +1,5 @@
 🌟 Salina Automation Testing Project
+
 📝 Overview
 
 This project is an automation testing suite for Salina AI, built using Playwright with TypeScript and the Page Object Model (POM) design pattern.

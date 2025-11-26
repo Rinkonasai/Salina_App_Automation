@@ -1,4 +1,5 @@
 import { Locator, Page } from "@playwright/test";
+import path from "path";
 
 export class HomePage {
   readonly page: Page;
@@ -38,9 +39,8 @@ export class HomePage {
     await this.uploadVideo.click();
 
     //Need to edit file path for new Video/Audio
-    await this.uploadFileInVideo.setInputFiles(
-      "C:/Users/Rem/VSCode/Salina_App/test-data/Four Sisters and a Wedding Official Trailer  Bea, Angel, Toni, Shaina,  Four Sisters and a Wedding.mp3"
-    );
+    const filepath = path.join(process.cwd(), "test-data","Four Sisters and a Wedding Official Trailer  Bea, Angel, Toni, Shaina,  Four Sisters and a Wedding.mp3");
+    await this.uploadFileInVideo.setInputFiles(filepath);
 
     await this.uploadButton.waitFor({ state: "visible" });
     await this.uploadButton.click();
@@ -56,9 +56,8 @@ export class HomePage {
     await this.uploadDocument.click();
 
     //Need to edit file path for new document
-    await this.uploadFileInDocument.setInputFiles(
-      "C:/Users/Rem/VSCode/Salina_App/test-data/The Big One Earthquake in the Philippines V1.pdf"
-    );
+    const filepath = path.join(process.cwd(), "test-data", "The Big One Earthquake in the Philippines V1.pdf");
+    await this.uploadFileInDocument.setInputFiles(filepath);
 
     await this.documentSubmitButton.waitFor({ state: "visible" });
     await this.documentSubmitButton.click();

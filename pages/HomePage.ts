@@ -39,7 +39,7 @@ export class HomePage {
 
     //Need to edit file path for new Video/Audio
     await this.uploadFileInVideo.setInputFiles(
-      "C:/Users/Rem/Downloads/For Salina App/Audio/Four Sisters and a Wedding Official Trailer  Bea, Angel, Toni, Shaina,  Four Sisters and a Wedding.mp3"
+      "C:/Users/Rem/VSCode/Salina_App/test-data/Four Sisters and a Wedding Official Trailer  Bea, Angel, Toni, Shaina,  Four Sisters and a Wedding.mp3"
     );
 
     await this.uploadButton.waitFor({ state: "visible" });
@@ -57,7 +57,7 @@ export class HomePage {
 
     //Need to edit file path for new document
     await this.uploadFileInDocument.setInputFiles(
-      "C:/Users/Rem/Downloads/For Salina App/Documents/The Big One Earthquake in the Philippines V1.pdf"
+      "C:/Users/Rem/VSCode/Salina_App/test-data/The Big One Earthquake in the Philippines V1.pdf"
     );
 
     await this.documentSubmitButton.waitFor({ state: "visible" });

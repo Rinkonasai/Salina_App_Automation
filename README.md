@@ -32,11 +32,10 @@ The goal is to streamline repetitive testing, improve efficiency, and provide re
 
 ⚙️ Setup Instructions
 1. Clone the Repository
-git clone <repository_url>
-cd salina-automation
+git clone <https://github.com/Rinkonasai/Salina_App_Automation.git>
 
 2. Install Dependencies
-npm install
+npm init playwright@latest
 
 3. Run Tests
 npx playwright test
